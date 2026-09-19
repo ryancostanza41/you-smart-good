@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Binary and Base-2 expanded</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>Now that we have started to understand Binary, let's go over a few concepts that will help further your understanding.</p>
+                    <img src="../images/img-016.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>When we look at the powers of 2, do you notice a difference between the right-most column when compared to every other column?
+                        <br>That's right, 2<sup>0</sup> equals 1, which is an odd number!
+                        <br>What does this mean though?
+                        <br>Well, since this is the only power of 2 that is an odd number, this means that any Base-2 sequence that has a <strong>1</strong> in the right-most column is an odd number, regardless of the rest of the sequence.</p>
+                    <img src="../images/img-017.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Let's take a look a different concept.
+                        <br>We've established that when a column has a <strong>0</strong> in it, that specific column will hold a value of 0.
+                        <br>So let's say we have a sequence of <strong>0 0 1</strong>. 
+                        <br>We know to start from the right-most column to determine the value. Since the one's column is the only column with a value that is not 0, we can stop at this column.
+                        <br>The value of 1 can be written as <strong>1</strong> or <strong>0 0 1</strong> or even <strong>0 0 0 0 0 0 1</strong>.</p>
+                    <img src="../images/img-018.png">    
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Here's another one.
+                        <br><strong>1 0</strong> is 2.
+                        <br><strong>1 0 0</strong> is 4.
+                        <br><strong>1 0 0 0</strong> is 8.
+                        <br>Notice how all of these are powers of 2.
+                        <br>This means that any time you have a single <strong>1</strong> followed by <strong>0</strong>s, the sequence will equal a power of 2!</p>
+                    <img src="../images/img-019.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Think we're done? Not yet!
+                        <br>Let's say we're working with only 4 bits.
+                        <br>What would be the largest number using 4 bits?
+                        <br>Since we only have two symbols(<strong>1</strong> and <strong>0</strong>) and <strong>1</strong> is always larger than <strong>0</strong>, we can use <strong>1</strong> in each of the bits to fit the largest value that we can get.
+                        <br>So the largest sequence we can make using 4 bits(or a nibble, remember?) is <strong>1 1 1 1</strong>, or 15.</p>
+                    <img src="../images/img-020.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Look at the largest sequences above. Do you see how all of those numbers are <i>almost</i> powers of 2?
+                        <br>They are all powers of 2 minus 1. 
+                        <br>So let's say we are trying to find the largest sequence that we can make using 9 bits. 
+                        <br>Let's use the equation: <strong>2<sup>n</sup> - 1</strong>
+                        <br>If we are trying to find the largest sequence using 9 bits, we can replace the <strong>n</strong> in the equation with 9.
+                        <br>So to find the largest sequence using 9 bits, we can use the equation <strong>2<sup>n</sup> - 1</strong>. (You can use a calculator. I won't tell anyone.)</p>
+                    <img src="../images/img-021.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./binary-and-base-2-quiz.html"><button>← Previous<br>Binary and Base-2 - Quiz</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a010-binary-expanded-quiz.html"><button>Next → <br>Binary and Base-2 expanded - Quiz</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>

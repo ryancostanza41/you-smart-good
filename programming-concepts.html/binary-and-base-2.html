@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Binary and Base-2</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>Now that we have a better understanding of how Base-10 works, we can use that knowledge to learn the basics of binary.
+                        <br>We learned in previous lessons that when you try to add 1 to the largest symbol (9 in Base-10), you drop the largest symbol to the smallest symbol (0 in Base-10), and then you add 1 to the digit to the immediate left.
+                        <br>We also learned that exponents and scientific notation play a major role in determining how numbers are strung together to create a sequence that we can fully understand.</p>
+                    <img src="../images/img-009.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>In Base-2, <strong>zero</strong> is still <strong>0</strong> and <strong>one</strong> is still <strong>1</strong>. 
+                        <br>But when we try to add 1 to 1, we run into a problem. This is because we have run out of symbols that we can use in this column.
+                        <br><i>*Remember, Base-2 only has two symbols: <strong>0</strong> and <strong>1</strong>.</i>
+                        <br>So, to add 1 to 1, we must drop the largest symbol(<strong>1</strong>) to the smallest symbol(<strong>0</strong>) and add 1 to the column to the left.
+                        <br>This means that in Base-2, <strong>two</strong> is symbolized with <strong>1 0</strong>!</p>
+                    <img src="../images/img-010.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now how can we check this to make sure we're doing this right?
+                        <br>Above, we stated that <strong>6</strong> in Base-10 is <strong>1 1 0</strong> in Base-2.
+                        <br>Using this example, we can demonstrate how it works with our old friend, scientific notation!
+                        <br><i>*Remember that in Base-10, the base in scientific notation is always 10. In Base-2, the base in scientific notation is always 2.</i>
+                        <br>The placement of the numbers, the coefficients and the exponents still work the exact same way as they did in Base-10.</p>
+                    <img src="../images/img-011.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Because the base is changed from ten to two, the names of the columns have changed.
+                        <br>The one's place in Base-10 is still the one's column.
+                        <br>The ten's place in Base-10 is now the two's column.
+                        <br>The hundred's place in Base-10 is now the four's column.
+                        <br>This will continue for every column, replacing the powers of 10 with the powers of 2. The columns and exponents work the exact same way though.</p>
+                    <img src="../images/img-012.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now is a good time to review our powers of 2, to make sure we don't run into any exponent errors down the road.
+                        <br>When moving away from the decimal point, we simply multiply each column by two as we go.
+                        <br>For example, the first column on the right is 2<sup>0</sup> which is 1.
+                        <br>If we move to the next column, the power changes to 2<sup>1</sup>, which is 2.
+                        <br>Each addition to the exponent is the equivalent to multiplying by 2. So the next column will be 4, then 8, then 16. It will continue like this indefinitely.</p>
+                    <img src="../images/img-013.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now let's try another example. If we have <strong>1 1 0 1 1</strong> in Base-2, what is the Base-10 equivalent?
+                        <br>Well we have a 1 in the one's, two's, eight's, and sixteen's column.
+                        <br>In the four's column, 0 will be the coefficient resulting in a 0 for that scientific notation equation, so let's just ignore it.
+                        <br>If we add together 16 + 8 + 2 + 1, we get a result of 27.
+                        <br>This means that <strong>1 1 0 1 1</strong> in Base-2 is <strong>27</strong> in Base-10!</p>
+                    <img src="../images/img-014.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Understanding scientific notation is vital for understanding numbers in Base-2.
+                        <br>Remember to always start on the right most side and begin with an exponent of 0.
+                        <br>Because the symbols in Base-2 never become larger than 1, each column will work with powers of 2. Meaning, the two's column in Base-2 will always equal either 2 or 0. The four's column in Base-2 will always equal either 4 or 0. The eight's column in Base-2 will always equal either 8 or 0. This continues indefinitely. Then, simply add the columns that have a 1 in them, ignoring the columns with 0 in their place.
+                    </p>
+                    <img src="../images/img-015.png"
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./base-10-quiz.html"><button>← Previous<br>Base-10 numbering system - Quiz</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./binary-and-base-2-quiz.html"><button>Next → <br>Binary and Base-2 - Quiz</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>

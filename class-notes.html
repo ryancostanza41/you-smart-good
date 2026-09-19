@@ -1,0 +1,70 @@
+<!-- WEEK 3
+ + = addition
+ - = subtraction
+ * = multiplication. x does not work in most programming languages
+ / = division. 1 over 2 does not work. normal division symbol does not work.
+ In most programming languages, 1/2 will equal 0. this is because both 1 and 2 are integers, so the program
+    will assume that you want to work in integers. to avoid this, use 1/2.0
+    
+The equal sign (=) is an assignment operator. meaning if you have:
+    x = 5
+    x = 5 + 1
+    , x becomes 6. even though in average math, this would not make sense, because x is being given two different values.
+
+when creating variables in python, you can use whole words or even phrases to create variables. 
+    you can not use spaces to create variables though. separate words with underscores. ex:
+    speed_of_car = 55
+    
+    most other programming languages use capital letters of every word except the first. ex:
+    speedOfCar = 55
+
+use onlinegdb for writing code without downloading anything to your device. will run on your browser.
+    make sure to set language to python3.
+
+begin with:     
+    print("Hello world!")
+    print("5") will print "5"
+    print(5) will print "5". this is because python recognizes 5 as an integer value. 
+        you do not need double quotes for values.
+    print (5+2) will print "7"
+    print ("5+2") will print "5+2"
+    print ("5" + "2") will print "52"
+    print("5" + 2) will print an error. you can not add a string and a number. it will not work.
+    print("5" + str(2)) will print "52". this is because str() turns whatever is in the parantheses into a string
+    print(int("5") + 2) will print "7". this is because int() turns the string in the parantheses into an integer
+    print(2 + 3*5 / 9) will print "3.666667". python will follow pemdas order of operations. mult, div, then add
+    print(5/0) will print an error "division by zero". this will crash the program. printing anything after this line will
+        not print. everything stops working after this error.
+
+    print(      "Hello world!") will print "Hello world!". python does not care about spaces around the quotes. 
+    print("Hello       world!") will print "Hello       world!". inside the parenthesis will effect the program.
+        
+    # = a comment in python. will not print anything on a line after a #
+        # this is a comment in python
+    
+Variables:
+    x = 5
+    print(x) will print "5". it will print whatever value is currently stored in x
+    print("x") will print "x". 
+    
+    x = 5
+    x = x + 1
+    print(x) will print "6". x + 1 became the new stored value of x
+    print(x*3) will print "18"
+    print(x * 3) will also print "18". spaces do not effect it because there are not parenthesis
+
+    x:int = 5   tells us that x SHOULD be an integer. this will give a warning when trying to change x into anything 
+        other than an integer. but it will not stop the code from changing it into something other than an integer.
+
+    x = 5
+    X = 13
+    print(x) will print "5". python is case sensitive
+
+    x = 10
+    y = 2
+    print(x/y) will print "5". you can combine variables
+    print("the value of y is " + str(y)) will print "the value of y is 2"
+
+The first time you create a variable in python for assignments, use :str or :int when applicable
+
+    -->
