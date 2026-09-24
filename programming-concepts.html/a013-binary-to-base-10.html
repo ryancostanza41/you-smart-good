@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Converting Base-10 to Binary</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>Congrats on completing your first review! You're doing great so far!
+                        <br>We spent a while discussing how to read binary and how to convert binary to Base-10, but we haven't really talked about converting Base-10 to binary.</p>
+                    <img src="../images/img-023.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>So how do we convert Base-10 numbers to Base-2? We'll break it down into steps and then look at some examples:
+                        <br><strong>Step 1. </strong>Find the largest power of 2 that fits into the Base-10 number without going over the Base-10 number. Then, put a 1 into that column.
+                        <br><strong>Step 2. </strong>Subtract the value of that power of 2 from the Base-10 number.
+                        <br><strong>Step 3. </strong>Repeat this process using the next largest power of 2.
+                        <br><strong>Step 4. </strong>Continue until the entire Base-10 number is accounted for.
+                        <br>Now let's use these steps to convert the number 43 to binary.</p>
+                    <img src="../images/img-024.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 1. </strong>Find the largest power of 2 that fits into the Base-10 number without going over the Base-10 number. Then, put a 1 into that column.
+                        <br>As we now know, the powers of 2 are: 1 (2<sup>0</sup>), 2 (2<sup>1</sup>), 4 (2<sup>2</sup>), 8 (2<sup>3</sup>), 16 (2<sup>4</sup>), 32 (2<sup>5</sup>), 64 (2<sup>6</sup>), 128 (2<sup>7</sup>), 256 (2<sup>8</sup>), and so on.
+                        <br>The largest power of 2 that fits into 43 is 32 (2<sup>5</sup>). The next power of 2 is 64 (2<sup>6</sup>), which is larger than 43, so we won't use that one.
+                        <br>So now we can put a <strong>1</strong> in the 32's column. This means that our binary sequence will be 6 bits.</p>
+                    <img src="../images/img-025.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 2. </strong>Subtract the value of that power of 2 from the Base-10 number.
+                        <br>In the previous step, we used 2<sup>5</sup>, which is 32. So we will subtract 32 from 43.
+                        <br>Now we have 11 left to work with.</p>
+                    <img src="../images/img-026.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 3. </strong>Repeat this process using the next largest power of 2.
+                        <br>Now we have a remaining balance of 11.  
+                        <br>The next largest power of 2 is 8. So let's repeat the process:
+                        <br>Put a <strong>1</strong> in the 8's column, then subtract 8 from the Base-10 number.
+                        <br>This now leaves a remaining balance of 3.
+                        <br>Note that because we are not using the 16's column, we simply put a <strong>0</strong> in its place.</p>
+                    <img src="../images/img-027.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 4. </strong>Continue until the entire Base-10 number is accounted for.
+                        <br>Now we are left with the value of 3. Let's follow the same process until the remaining balance is exactly 0.
+                        <br>The next largest power of 2 is 2, so we will put a <strong>1</strong> in the 2's column and subtract 2 from 3, leaving a remaining balance of 1.
+                        <br>The remaining balance is a power of 2 (2<sup>0</sup>), so we can put a <strong>1</strong> in the 1's column. 
+                        <br>We now have a remaining balance of 0, which means we're done! We now know that 43 in binary is <strong>1 0 1 0 1 1</strong>!</p>
+                    <img src="../images/img-028.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Let's do one more. Let's try the number 22.
+                        <br>The largest power of 2 that fits is 16, so let's put a <strong>1</strong> in the 16's column, and subtract it from 27. We now have a remaining value of 6.
+                        <br>The next largest power of 2 would be 4, so let's following the same process. We have a remaining balance of 2. 
+                        <br>2 fits into 2<sup>1</sup> perfectly, so once we put a <strong>1</strong> into the 2's column, we're done!
+                        <br>We now know that 22 in binary is <strong>1 0 1 1 0</strong>!</p>
+                    <img src="../images/img-029.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./a012-review-01.html"><button>← Previous<br>Review 1</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a014-base-10-to-binary-quiz.html"><button>Next → <br>Converting Base-10 to Binary - Quiz</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>

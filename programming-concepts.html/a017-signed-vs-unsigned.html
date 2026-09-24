@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Signed vs unsigned</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>Are you sick of math yet? Well too bad.
+                        <br>Just wait until we get to hexadecimal. Because oh boy, hexadecimal hurts my brain.</p>
+                    <img src="../images/img-037.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>So we've learned a bit about positive and negative integers in binary. Now let me ask you a question . . .
+                        <br>If you see <strong>1 1 1 1 1 1 0 1</strong>, how do you know if you're looking at -3 or 253?
+                        <br>It's time to talk about signed and unsigned integer data!</p>
+                    <img src="../images/img-038.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Because data only has a limited amount of storage, compromises must be made. Integer data can be stored <strong>unsigned</strong>(positives only) or <strong>signed</strong>(positives and negatives).
+                        <br>If we are working with 8-bit <strong><i>un</i>signed</strong> integer storage, our range is from 0 to 255.
+                        <br>If we are working with 8-bit <strong>signed</strong> integer storage, our range becomes -128 to 127.
+                        <br>In an unsigned system, the lowest integer value will always be 0, because we are not dealing with negatives. The highest value, as we learned in previous lessons, is 2<sup>n</sup> - 1, which in the case of 8-bit, is 255.
+                        <br>In a signed system, we have two equations to learn:
+                        <br>The <strong>lowest</strong> value will be -2<sup>n-1</sup>
+                        <br>The <strong>highest</strong> value will be 2<sup>n-1</sup> - 1</p>
+                    <img src="../images/img-039.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>So if we look at the example above, the value of <strong>1 1 1 1 1 1 0 1</strong> will depend on our data type.
+                        <br>If it's unsigned integer storage, this sequence would equal 253.
+                        <br>If it's signed integer storage, it would equal -3.</p>
+                    <img src="../images/img-040.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>I feel like I just threw a lot of info at you. I hope you've been taking notes! Let's look at the main points:
+                        <br><strong>1. </strong>Unsigned data contains only positive integers.
+                        <br><strong>2. </strong>The lowest value in unsigned data is <i>always</i> 0. The highest value is: 2<sup>n</sup>-1.
+                        <br><strong>3. </strong>Signed data contains both positive and negatives integers.
+                        <br><strong>4. </strong>The lowest value in signed data is: -2<sup>n-1</sup>. The highest value in signed data is: 2<sup>n-1</sup>-1.</p>
+                    <img src="../images/img-041.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./a016-negative-numbers-quiz.html"><button>← Previous<br>Negative numbers in binary - Quiz</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a018-signed-vs-unsigned-quiz.html"><button>Next → <br>Signed vs unsigned - Quiz</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>

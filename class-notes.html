@@ -67,4 +67,28 @@ Variables:
 
 The first time you create a variable in python for assignments, use :str or :int when applicable
 
-    -->
+-->
+
+<!-- WEEK 4
+
+city:str = input("What city are we in? ")
+print("We are currently in " + city + ".") 
+    Will run the top line until the user inputs something into the terminal. then the second line will run.
+
+    Alternatively:
+    print("What city are we in? ")
+    city = input
+        this will put the input on the next line
+
+x:int = int(input("Give me a number: "))        >>using "int" before the input changes the string to an integer. without this, the print(x + y) views the variables as strings. 
+print(x)
+y:int = int(input("Give me another number: "))
+print(y)
+print(x + y)
+
+firstOp:int = int(input("Give me a number: "))
+secondOp:int = int(input("Give me another number: "))
+print("firstOp + secondOp = " + str(firstOp + secondOp))        >>if you input str(firstOp) + str(secondOp) then they will run as individual strings. str() around the whole problem will keep them as integers until after they are added, then the solution will become a string.
+print(str(firstOp) + " + " + str(secondOp) + " = "+ str(firstOp + secondOp))            >>to view the actual numbers, instead of seeing "firstOp + secondOp" in the terminal.
+print(str(firstOp) + " - " + str(secondOp) + " = "+ str(firstOp - secondOp))            >>to change from addition to subtraction 
+-->

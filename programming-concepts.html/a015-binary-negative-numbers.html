@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Negative numbers in binary</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>So far in our binary lessons, we have only discussed positive numbers. Now seems like a good time to discuss negative numbers in binary.
+                        <br>So how do we turn a positive number into a negative number? The steps may seem confusing, but let's dive into it and we'll discuss the logic later(or never, depending on if I forget).</p>
+                    <img src="../images/img-034.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>So what are the steps to make a positive number negative in binary?
+                        <br><strong>Step 1. </strong>Flip all the bits.
+                        <br><strong>Step 2. </strong>Add 1.
+                        <br>This process is called <strong>Two's complement</strong>.
+                        <br>Confused yet? Well let's see an example!</p>
+                    <img src="../images/img-031.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>We know that 5 in binary is <strong>1 0 1</strong>.
+                        <br>Now let's follow the steps of <strong>Two's complement</strong> to make this -5:
+                        <br><strong>Step 1. </strong>Flip all the bits. This is easy. Turn all the <strong>1</strong>s into <strong>0</strong>s and all the <strong>0</strong>s into <strong>1</strong>s.
+                        <br><strong>Step 2. </strong>Add 1. Don't overthink this one. Just add <strong>1</strong> to this new sequence.
+                        <br>And there you have it! In binary, -5 is represented with <strong>0 1 1</strong>!</p>
+                    <img src="../images/img-032.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Let's do another one! What is -10 in binary? Let's follow the same steps and find out!
+                        <br>10 in binary is <strong>1 0 1 0</strong>.
+                        <br>First, let's flip the bits. This gives us <strong>0 1 0 1</strong>.
+                        <br>Now we have to add 1. Since the 1's column has a <strong>1</strong> in it already, we drop the largest symbol to the smallest symbol and add 1 to the column on the left (sound familiar? It should!). 
+                        <br>When we add 1, we get <strong>0 1 1 0</strong>. This is -10 in binary!</p>
+                    <img src="../images/img-033.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now we know that -10 is <strong>0 1 1 0</strong> in binary, but what if we're working with 8 bits? (or a byte, remember? remember?!?)
+                        <br>This sequence is represented using only 4 bits, so what happens to the rest of the bits if it's 8-bit?
+                        <br>To understand this, let's look at +10.
+                        <br>We know that <strong>1 0 1 0</strong> represents 10 in binary. We also know that everything before the left-most <strong>1</strong> is a <strong>0</strong>, meaning 10 can also be represented by <strong>0 0 0 0 1 0 1 0</strong>.
+                        <br>The first step of making a positive number negative in binary is to flip all the bits, this means that all the <strong>0</strong>s become <strong>1</strong>s.
+                        <br>So in 8-bits, -10 would be written as <strong>1 1 1 1 0 1 1 0</strong>!</p>
+                    <img src="../images/img-035.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now why the heck are these the steps of <strong>Two's complement</strong>?
+                        <br>Well, it's because zero exists. Let me explain.
+                        <br>-0 does not exist. According to standard mathematical definitions, zero is neither positive nor negative. So the process of Two's complement exists so that zero will always be represented with <strong>0</strong>, even if you try to make it negative.
+                        <br>Let's see this in action. If we're working with 4 bits (a nibble), zero is represented with <strong>0 0 0 0</strong>.
+                        <br>Now let's follow the steps and change all the <strong>0</strong>s into <strong>1</strong>s. But what happens when we try to add 1 to this?
+                        <br>We know to drop the largest symbol to the smallest symbol and add 1 to the column to the left. But we have to do this with every column, becuase they all have a <strong>1</strong> in their place. When we do this, we end up back at <strong>0 0 0 0</strong>!</p>
+                    <img src="../images/img-036.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./a014-base-10-to-binary-quiz.html"><button>← Previous<br>Converting Base-10 to Binary - Quiz</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a016-negative-numbers-quiz.html"><button>Next → <br>Negative numbers in binary - Quiz</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>
