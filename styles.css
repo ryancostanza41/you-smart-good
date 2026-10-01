@@ -96,8 +96,8 @@ br {
 }
 
 .q-and-a button:active {
-    /* background-color: bisque; */
-    transform: scale(1.1);
+    background-color: azure;
+    /* transform: scale(1.1); */
 }
 
 .q-and-a {
