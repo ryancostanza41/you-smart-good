@@ -41,7 +41,8 @@ button {
 .lesson-buttons {
     display: flex;
     justify-content: center;
-    gap: 50%;
+    gap: 40%;
+    max-width: 100%;
 }
 
 .website-title a {
