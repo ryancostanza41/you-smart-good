@@ -47,16 +47,17 @@ button {
     color: black;
 }
 
-.portrait img {
-    width: 480px;
-    height: 640px;
-}
+/* .portrait img { */
+    /* width: 480px; */
+    /* height: 640px; */
+/* } */
 
 .landscape img {
     width: 600px;
     /* height: 480px; */
     aspect-ratio: 4/3;
     object-fit: cover;
+    max-width: 100%
 }
 
 .landscape {
@@ -85,12 +86,14 @@ br {
 }
 
 .q-and-a button {
+    /* flex-direction: row; */
     width: 200px;
     height: 100px;
     /* align-items: flex-start; */
 }
 
 .q-and-a {
+    /* flex-direction: row; */
     margin-bottom: 40px;
 }
 
@@ -105,4 +108,19 @@ br {
 footer button {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+    .landscape {
+        flex-direction: column;
+    }
+    .chapter-heading {
+        flex-direction: column
+    }
+}
+
+.chapter-heading {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
 }
