@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Two-step conversions</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>So far, we've learned how to convert:
+                        <br><strong>1. </strong>binary to base-10
+                        <br><strong>2. </strong>base-10 to binary
+                        <br><strong>3. </strong>hexadecimal to base-10
+                        <br><strong>4. </strong>base-10 to hexadecimal    
+                        <br>But what happens if we need to convert binary to hexadecimal, or hexadecimal to binary?
+                        <br>Welcome to two-step conversions!</p>
+                    <img src="../images/img-080.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>If we have 101101<sub>2</sub>, what is this value in hexadecimal?
+                        <br>Well since it is a base-2 number, first we need to know what it is in binary, and since we are much more familiar with base-10, we are going to convert this:
+                        <br><strong>Step 1.</strong> from binary to base-10, then: 
+                        <br><strong>Step 2.</strong> from base-10 to hexadecimal. 
+                        <br>See that? Two steps!</p>
+                    <img src="../images/img-081.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 1. </strong>convert from binary to base-10.
+                        <br>There is a 1 in the ones, fours, eights, and thirty-twos column. The other columns have a 0, so we can ignore those.
+                        <br>If we add 1+4+8+32, we get 45.
+                        <br>This means that 
+                        <br>101101<sub>2</sub> = 45<sub>10</sub></p>
+                    <img src="../images/img-082.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 2. </strong>convert from base-10 to hexadecimal.
+                        <br>We follow the steps that we learned from previous problems to convert to base-16.
+                        <br>When we follow these steps, we see that 
+                        <br>45<sub>10</sub> = 2D<sub>16</sub></p>
+                    <img src="../images/img-083.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>We now know that 101101 in binary equals 45 in base-10.
+                        <br>We also know that 45 in base-10 equals 2D in hexadecimal.
+                        <br>Therefore, 101101 in binary equals 2D in hexadecimal.
+                        <br>And with that, this equation is done!</p>
+                    <img src="../images/img-084.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./a030-base-16-concepts-quiz.html"><button>← Previous<br>Hexadecimal concepts - Quiz</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a032-two-step-cont.html"><button>Next → <br>Two-step conversions, continued</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>

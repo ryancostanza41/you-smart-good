@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Hexadecimal concepts</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>Before we move on to two-step conversions, let's take a moment to go over some hexadecimal concepts that we haven't discussed yet (and give you a break from math).</p>
+                    <img src="../images/img-079.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Remember what we found in binary, regarding sequence like:
+                        <br><strong>1 0 0 </strong>or <strong>1 0 0 0 0</strong>?
+                        <br>That's right, they equaled powers of 2! Hexadecimal does this as well, but with powers of 16.
+                        <br>For instance, 10 in hexadecimal equals 16 in base-10. 100 in hexadecimal equals 256 in base-10. Any time you see a single 1 followed by 0s, the base-10 equivalent will equal a power of 16.</p>
+                    <img src="../images/img-074.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now what if we kept going with that Base-16 chart? what if we wanted to see 1000000000000? That's kinda messy, huh? How many zeros is that?
+                        <br>In Base-10, we commonly see commas. For instance, if we were writing 5834795026745, we could put 5,834,795,026,745. We can do exactly this in hexadecimal.
+                        <br>If we have 1000000000000 in hexadecimal, we can write 1,000,000,000,000. This makes it significantly easier to read!
+                        <br>Just like in Base-10, the commas do not have any sort of mathematical significance. They are only there for readability. They do not change the sequence in any way.</p>
+                    <img src="../images/img-075.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Here's another idea that is similar to something we found in binary.
+                        <br>Remember what would happen when we had a sequence like <br><strong>1 1 1 1</strong>? It would be a power of 2 minus one.
+                        <br>This happens when every column has the largest possible symbol. <br><strong>1 1 1 1</strong> is 15, or 2<sup>4</sup>-1.
+                        <br>This also works with hexadecimal, but a little differently. In hexadecimal, 1 is <i>not</i> the largest symbol. F is. This means, if we have a hexadecimal sequence containing only Fs, then the sequence will equal a power of 16 minus 1. 
+                        <br>For instance, FFF equals 4,095, or 16<sup>3</sup>-1.</p>
+                    <img src="../images/img-076.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>We spend a lot of time saying things like, "110 in base-16" or "110 in Base-10" or "110 in base-2," but there is actually a shorter way to make the bases known. 
+                        <br>A <strong>base subscript</strong> is an identifier placed after the number to show what base the number is in. It will appear as a smaller number in a lower position. 
+                        <br>For instance, if you wanted 110 in base-2, it would appear as: 110<sub>2</sub>
+                        <br>110 is the sequence of numbers we are working with, and the <sub>2</sub> is the base that the sequence appears in.
+                        <br>So if you want to see F,32D in hexadecimal, it could appear as: F,32D<sub>16</sub>
+                        <br>Similarly to commas, the subscript does not change the value of the known number, it is there to let us know what base we are working in.</p>
+                    <img src="../images/img-077.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Here's another one for you that you may have already noticed . . .
+                        <br>How do you write two in binary(base-2)? It's 10, right?
+                        <br>Now how do we write ten in base-10? It's 10, obviously . . . wait a second, do you see what I see?
+                        <br>One more. What is sixteen in hexadecimal (base-16)? Holy macaroni, it's 10!
+                        <br>That's right, when working in any base, the sequence to represent that base is 10. 
+                        <br>For instance, if we are working in base-32, to create the value of thirty-two, it is: 10<sub>32</sub>
+                        <br>To create the value of sixty-four in base-64, it is: 10<sub>64</sub></p>
+                    <img src="../images/img-078.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./a028-base-10-to-16-quiz.html"><button>← Previous<br>Converting Base-10 to hecadecimal - Quiz</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a030-base-16-concepts-quiz.html"><button>Next → <br>Hexadecimal concepts - Quiz</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>

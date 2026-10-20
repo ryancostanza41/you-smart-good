@@ -14,7 +14,7 @@
             <section class="website-title">
               <a href="../index.html"><h1>you smart good</h1></a>
               <h2>Programming Concepts</h2>
-              <h3>Hexadecimal</h3>
+              <h3>Introduction to hexadecimal</h3>
             </section>  
             <hr>
             <section>
@@ -22,26 +22,87 @@
                     <p>Congratulations on completing your second review!
                         <br>Now let's take a break and have a party!
                         <br>. . . okay party time's over. Get back to work!!</p>
-                    <img src="">
+                    <img src="../images/img-058.png">
                 </div>
                 <hr>
                 <div class="landscape">
-                    <p>As you've probably noticed, storage is extremely important in programming. 
-                        <br>I mean, if you're working with a byte and you want to write out the number 1, it's <strong>0 0 0 0 0 0 0 1</strong>.
-                        <br>That's a lot of work just to write the number 1!
-                        <br>Not only is it a lot of work, but it's also very limiting. Each column can only either be <strong>0</strong> or <strong>1</strong>. As far as integers go, there isn't much that you can fit in Base-2. 
-                        <br>What if there was a way to hold more numbers? We know we're familiar with Base-10 (0-9), but what if there was a larger system that we could use? Something that could hold more data in less storage . . . 
-                    </p>
-                    <img src="">
+                    <p>As you've probably noticed, storage is extremely important in programming. We must constantly be aware of the limited amount of space that we have to work with.
+                        <br>Let's look at the number ten for a minute . . .
+                        <br>If we want to write ten in binary, it's <strong>1 0 1 0</strong>. That's four columns just to write one number!
+                        <br>Even in Base-10, 10 takes up two columns, which is less than binary, but still, what if it could be condensed further?
+                        <br>This thought process led to the creation of a larger storage number system . . . </p>
+                    <img src="../images/img-057.png">
                 </div>
                 <hr>
+                <div class="landscape">
+                    <p>Welcome to <strong>hexadecimal</strong>!
+                        <br>Hexadecimal is another number base that is commonly seen in computer programming. There are 16 symbols in hexadecimal; therefore, this is a Base-16 number system.
+                        <br>Zero through nine is still represented with the same symbols used in Base-10 (0-9). But when we get to ten, it start to look a little different.
+                        <br>ten is represented with <strong>A</strong>, eleven is represented with <strong>B</strong>, twelve is <strong>C</strong>, thirteen is <strong>D</strong>, fourteen is <strong>E</strong>, fifteen is <strong>F</strong>.</p>
+                    <img src="../images/img-053.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now we are going to take the concepts we learned in Base-2 and Base-10 and apply them to Base-16!
+                        <br>If we look at the image above, we see that 16 in hexadecimal is <strong>10</strong>.
+                        <br>This is because the largest symbol in Base-16 is <strong>F</strong>, and we know from previous lessons that when you try to add 1 to the largest symbol (<strong>F</strong>), you must drop it to the smallest symbol (<strong>0</strong>), then add 1 to the column on the left. </p>
+                    <img src="../images/img-054.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Remember how important it was to know the powers of 2 in binary? Let's take a moment to look at this chart showing the powers of 16.
+                        <br>The numbers get pretty big pretty quickly, so it's okay to feel a little overwhelmed by this, but we'll keep working on it so you will become more confident as we keep going.
+                        <br>And feel free to use a calculator. I know I will!</p>
+                <img src="../images/img-055.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>We know about the places in Base-10 (ones, tens, hundreds, etc.) and we know about the columns in Base-2 (ones, twos, fours, etc.). Now let's learn about Base-16.
+                        <br>In the past, we've gotten the number columns from the powers of the base. For example, 2<sup>3</sup> is 8, so that column is the eights column. 
+                        <br>It works exactly the same with Base-16. Remember, we always start on the right with the exponent 0. 
+                        <br>So, the first column will be 16<sup>0</sup>. And don't forget, anything to the power of 0 is 1! So the right-most column is still the ones column.
+                        <br>Next we have 16<sup>1</sup>, which is 16. We can keep going using the chart above to figure out how the columns work.</p>
+                    <img src="../images/img-056.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Let's revisit how to convert a Base-2 number to Base-10. Let's say we have the Base-2 number <br><strong>1 0 1 0</strong>.
+                        <br>How do we convert this to Base-10? We use scientific notation and the powers of 2 to determine how much value each column has. </p>
+                    <img src="../images/img-059.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now let's say we have the exact same sequence of numbers, but instead of Base-2, we're working with Base-16. If we convert <br><strong>1010</strong> in Base-16 to Base-10, what would its value be?
+                        <br>We are going to use the exact same methods that we used when we were working in Base-2. Be aware, however, that because we are now in Base-16, the base for scientific notation now changes to 16.
+                        <br>Besides this, the process is identical.</p>
+                    <img src="../images/img-060.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Take a look at another conversion. Let's convert this from hexadecimal to Base-10: 
+                        <br>3F9D
+                        <br>Remember in hexadecimal, A-F are used as numerical symbols. For this specific conversion, we will be using D and F.
+                        <br>D is 13 and F is 15. 
+                        <br>Let's use this information to follow the same steps as above, using scientific notation to find the value of each column, then adding all the columns together.
+                        <br>With this, we can find that 3F9D in hexadecimal converts to 16,285 in Base-10!</p>
+                    <img src="../images/img-061.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Before taking the quiz, let's make a list of everything we went over in this section:
+                        <br><strong>1. </strong>The symbols A-F and their values.
+                        <br><strong>2. </strong>The powers of 16, as well as the columns.
+                        <br><strong>3. </strong>How to convert Base-16 to Base-10.
+                        <br>Again, feel free to use a calculator in this section. I don't expect you to know 16<sup>5</sup> off the top of your head.</p>
+                    <img src="../images/img-062.png">
+                </div>
             </section>
         <footer class="lesson-buttons">
             <section class="previous-button">
                 <a href="./a023-review-2.html"><button>← Previous<br>Review 2</button></a>
             </section>
             <section class="next-button">
-                <a href="REPLACE"><button>Next → <br>REPLACE</button></a>
+                <a href="./a025-hexadecimal-quiz.html"><button>Next → <br>Introduction to hexadecimal - Quiz</button></a>
             </section>
         </footer>
         </main>

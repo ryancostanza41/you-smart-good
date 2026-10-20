@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Two-step conversions, continued</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>This process gets reversed if you want to convert a base-16 number to base-2:
+                        <br><strong>Step 1. </strong>from hexadecimal to base-10, then
+                        <br><strong>Step 2. </strong>from base-10 to binary
+                        <br>Let's convert CA in hexadecimal to binary.</p>
+                    <img src="../images/img-085.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 1. </strong>Convert from hexadecimal to base-10.
+                        <br>We learned in previous lessons that in base-16, C=12 and A=10. 
+                        <br>Knowing this, we can input these numbers into our scientific equation to find that:
+                        <br>CA<sub>16</sub> = 202<sub>10</sub></p>
+                    <img src="../images/img-086.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p><strong>Step 2. </strong>Convert from base-10 to binary.
+                        <br>When looking at the powers of 2, we see that 256 is larger than 202, so we will not use that column.
+                        <br>128 fits into 202 without going over, so we will put a <strong>1</strong> in its column and subtract 128 from 202. Our remainder is 74.</p>
+                    <img src="../images/img-087.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Continuing with the remainder of 74, the next largest power of 2 is 64. 64 fits into 74 without going over. So we can put a <strong>1</strong> in the 64s column and subtract it from 74.
+                        <br>We now have a remainder of 10.</p>
+                <img src="../images/img-088.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>32 and 16 are larger than the remainder of 10, so we can input <strong>0</strong>s into those columns.</p>
+                <img src="../images/img-089.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>4 is larger than the remainder of 2, so we continue to the 2s column. When we subtract 2 from 2, we get a remainder of 0. This means that we can input a <strong>0</strong> into any remaining columns.</p>
+                <img src="../images/img-090.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>We now know that CA in hexadecimal equals 11001010 in binary!</p>
+                <img src="../images/img-091.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./a031-two-step-conversion.html"><button>← Previous<br>Two-step conversions, continued</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a033-before-review-3.html"><button>Next → <br>Before review 3 . . .</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>

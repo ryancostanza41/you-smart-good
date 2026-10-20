@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>you smart good</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles.css" rel="stylesheet"/>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="website-title">
+              <a href="../index.html"><h1>you smart good</h1></a>
+              <h2>Programming Concepts</h2>
+              <h3>Converting Base-10 to hexadecimal</h3>
+            </section>  
+            <hr>
+            <section>
+                <div class="landscape">
+                    <p>We've examined how to convert Base-16 sequences to Base-10. Now let's learn how to convert Base-10 to Base-16!
+                        <br>We know that A-F are 10-15, but let's take a look at some larger numbers.
+                        <br>There is a lot to do to convert into Base-16. But fret not, you'll get it!</p>
+                    <img src="../images/img-063.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Let's convert the Base-10 number 26,312 into hexadecimal.
+                        <br>First, let's review the powers of 16. What is the largest power of 16 that fits into 26,312 without going over?</p>
+                    <img src="../images/img-055.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>If you said 16<sup>3</sup>, then you are correct!
+                        <br>4,096 goes into 26,312 without going over, and 65,536 does not fit into 26,312. so 16<sup>3</sup> is correct.
+                        <br>Now we know that 16<sup>3</sup> will be the largest power we will work with. This means that the Base-16 number will extend to the 4,096s place. So our Base-16 sequence will have four numbers.
+                        <br>How many times does 4,096 fit into 26,312? There will be a remainder, that's okay.</p>
+                    <img src="../images/img-064.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>4,096 fits into 26,312 six <i>whole</i> times. This means that our Base-16 number will have a 6 in the 4,096s column. There is a remainder, but we are going to ignore it for now. We are only concerned with the whole number.
+                        <br>Now we are going to multiply 4,096 and 6, for a product of 24,576.
+                        <br>Then we subtract 24,576 from 26,312. This gives us a remainder of 1,736.</p>
+                    <img src="../images/img-065.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>We can follow the same process with the remaining balance of 1,736 to determine what symbol will be in the 256s column.
+                        <br>How many times does 256 fit into 1,736? Six <i>whole</i> times. So we now know that the 256s column will have a 6 in its place.
+                        <br>Now we multiply 256 by 6, for a product of 1,536. This value will be subtracted from 1,736.
+                        <br>We now have a remaining balance of 200.</p>
+                    <img src="../images/img-066.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now we continue with the remainder of 200. 16 goes into 200 12 <i>whole</i> times.
+                        <br>In Base-16, the value of 12 is represented with C, so the sixteens column will contain a C.
+                        <br>16 x 12 equals 192, so we can subtract that total from 200.
+                        <br>Our remaining balance is now 8.</p>
+                    <img src="../images/img-067.png">
+                </div>
+                <hr>
+                <div class="landscape">
+                    <p>Now we have a remaining balance of 8. We can either follow the same process, or we can simply put an 8 in the ones column. This will make it so there is no remaining balance to carry over.
+                        <br>When there is no remaining balance, we are done.
+                        <br>We now know that 26,312 in Base-10 equals 66C8 in hexadecimal!</p>
+                    <img src="../images/img-068.png">
+                </div>
+            </section>
+        <footer class="lesson-buttons">
+            <section class="previous-button">
+                <a href="./a025-hexadecimal-quiz.html"><button>← Previous<br>Introduction to hexadecimal - Quiz</button></a>
+            </section>
+            <section class="next-button">
+                <a href="./a027-base-10-to-16-cont.html"><button>Next → <br>Converting Base-10 to hexadecimal, continued</button></a>
+            </section>
+        </footer>
+        </main>
+    </body>
